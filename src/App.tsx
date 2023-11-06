@@ -6,7 +6,14 @@ export const App = () => {
 		<>
 			<Header />
 			<p>Welcome to this site.</p>
-			<Footer/>
+			<div className="bg-orange-300 p-4">
+				<h2 className="mb-2 text-2xl">title</h2>
+				<div className="flex gap-4">
+					<img src="images/city.png" />
+					<p>body</p>
+				</div>
+			</div>
+			<Footer />
 		</>
 	);
 };
