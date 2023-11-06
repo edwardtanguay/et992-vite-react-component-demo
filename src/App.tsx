@@ -1,3 +1,4 @@
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 
 export const App = () => {
@@ -5,6 +6,7 @@ export const App = () => {
 		<>
 			<Header />
 			<p>Welcome to this site.</p>
+			<Footer/>
 		</>
 	);
 };
