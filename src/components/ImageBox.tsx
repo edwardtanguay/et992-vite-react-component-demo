@@ -1,3 +1,5 @@
+import { Stars } from "./Stars";
+
 interface IProps {
 	title: string;
 	imageFile: string;
@@ -22,7 +24,7 @@ export const ImageBox = ({
 	return (
 		<div className={`bg-orange-300 p-4 mt-3 ${highlight()}`}>
 			<h2 className="mb-2 text-2xl">
-				{title} {"*".repeat(stars)}
+				{title} <Stars stars={stars} />
 			</h2>
 			<div className="flex gap-4">
 				<img src={`images/${imageFile}`} />
