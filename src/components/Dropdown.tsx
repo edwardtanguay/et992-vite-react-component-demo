@@ -1,5 +1,9 @@
-export const Dropdown = () => {
+interface IProps {
+	choices: string[];
+}
+
+export const Dropdown = ({ choices } : IProps) => {
 	return (
-		<p>dropdown</p>
+		<p>{choices.length}</p>
 	)
 }
