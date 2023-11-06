@@ -4,6 +4,7 @@ import { ImageBox } from "./components/ImageBox";
 import { Dropdown } from "./components/Dropdown";
 import * as exampleData from "./exampleData";
 import { ScoreCard } from "./components/ScoreCard";
+import { Wrapper } from "./components/Wrapper";
 
 export const App = () => {
 	return (
@@ -31,6 +32,8 @@ export const App = () => {
 			<ScoreCard playerResult={playerResult} />
 				)
 			})}
+			
+			<Wrapper/>
 
 			<Footer />
 		</>
