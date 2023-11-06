@@ -11,19 +11,23 @@ export const App = () => {
 		<>
 			<Header />
 			<p>Welcome to this site.</p>
-			<ImageBox
-				title="Paris Trip"
-				imageFile="paris.png"
-				body="We had a great time in Paris."
-				stars={3}
-				highlighted={true}
-			/>
-			<ImageBox
-				title="China Trip"
-				imageFile="city.png"
-				body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vitae nisi ratione repellendus dolorum ea officia nam, consequuntur, sunt similique dolores quidem iste voluptates adipisci quam suscipit expedita odio commodi!"
-				stars={16}
-			/>
+
+			<Wrapper title="Image Boxes">
+				<ImageBox
+					title="Paris Trip"
+					imageFile="paris.png"
+					body="We had a great time in Paris."
+					stars={3}
+					highlighted={true}
+				/>
+				<ImageBox
+					title="China Trip"
+					imageFile="city.png"
+					body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vitae nisi ratione repellendus dolorum ea officia nam, consequuntur, sunt similique dolores quidem iste voluptates adipisci quam suscipit expedita odio commodi!"
+					stars={16}
+				/>
+			</Wrapper>
+
 			<Wrapper title="Dropdowns">
 				<Dropdown choices={exampleData.countries} />
 				<Dropdown choices={exampleData.animals} />

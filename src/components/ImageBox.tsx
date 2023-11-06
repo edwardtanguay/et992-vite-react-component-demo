@@ -20,7 +20,7 @@ export const ImageBox = ({
 	};
 
 	return (
-		<div className={`bg-orange-300 p-4 ${highlight()}`}>
+		<div className={`bg-orange-300 p-4 mt-3 ${highlight()}`}>
 			<h2 className="mb-2 text-2xl">
 				{title} {"*".repeat(stars)}
 			</h2>
