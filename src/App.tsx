@@ -27,13 +27,11 @@ export const App = () => {
 			<Dropdown choices={exampleData.countries} />
 			<Dropdown choices={exampleData.animals} />
 
-			{exampleData.playerResults.map(playerResult => {
-				return (
-			<ScoreCard playerResult={playerResult} />
-				)
-			})}
-			
-			<Wrapper/>
+			<Wrapper title="Score Cards">
+				{exampleData.playerResults.map((playerResult) => {
+					return <ScoreCard playerResult={playerResult} />;
+				})}
+			</Wrapper>
 
 			<Footer />
 		</>
