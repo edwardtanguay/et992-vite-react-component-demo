@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Footer } from "./components/layout/Footer";
 import { Header } from "./components/layout/Header";
 import { ImageBox } from "./components/ImageBox";
@@ -7,6 +8,7 @@ import { ScoreCard } from "./components/ScoreCard";
 import { Wrapper } from "./components/Wrapper";
 
 export const App = () => {
+	const [favorite, setFavorite] = useState('');
 	return (
 		<>
 			<Header />
@@ -37,10 +39,10 @@ export const App = () => {
 				<div className="flex">
 					<div>
 						{exampleData.playerResults.map((playerResult) => {
-							return <ScoreCard playerResult={playerResult} />;
+							return <ScoreCard playerResult={playerResult} setFavorite={setFavorite} />;
 						})}
 					</div>
-					<p className="flex w-full justify-center items-center text-5xl">nnn</p>
+					<p className="flex w-full justify-center items-center text-5xl">{favorite}</p>
 				</div>
 			</Wrapper>
 
