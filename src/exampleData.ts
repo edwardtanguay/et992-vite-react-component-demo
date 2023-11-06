@@ -25,15 +25,15 @@ export const animals = [
 export const playerResults = [
 	{
 		name: "Scott",
-		score: 28372
+		score: "08372"
 	},
 	{
 		name: "Ryan",
-		score: 21992
+		score: "21992"
 	},
 	{
 		name: "Ashley",
-		score: 11882
+		score: "11882"
 	}
 ]
 

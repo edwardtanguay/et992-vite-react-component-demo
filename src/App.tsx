@@ -26,7 +26,11 @@ export const App = () => {
 			<Dropdown choices={exampleData.countries} />
 			<Dropdown choices={exampleData.animals} />
 
-			<ScoreCard />
+			{exampleData.playerResults.map(playerResult => {
+				return (
+			<ScoreCard playerResult={playerResult} />
+				)
+			})}
 
 			<Footer />
 		</>
