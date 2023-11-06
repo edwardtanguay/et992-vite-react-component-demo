@@ -1,18 +1,13 @@
-import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
+import { Footer } from "./components/layout/Footer";
+import { Header } from "./components/layout/Header";
+import { ImageBox } from "./components/ImageBox";
 
 export const App = () => {
 	return (
 		<>
 			<Header />
 			<p>Welcome to this site.</p>
-			<div className="bg-orange-300 p-4">
-				<h2 className="mb-2 text-2xl">title</h2>
-				<div className="flex gap-4">
-					<img src="images/city.png" />
-					<p>body</p>
-				</div>
-			</div>
+			<ImageBox title="China Trip" imageFile="city.png" body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vitae nisi ratione repellendus dolorum ea officia nam, consequuntur, sunt similique dolores quidem iste voluptates adipisci quam suscipit expedita odio commodi!" />
 			<Footer />
 		</>
 	);
