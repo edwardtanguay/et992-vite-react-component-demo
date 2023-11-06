@@ -20,5 +20,20 @@ export const animals = [
 	"Penguin",
 	"Dolphin",
 	"Hippopotamus",
+];
+
+export const playerResults = [
+	{
+		name: "Scott",
+		score: 28372
+	},
+	{
+		name: "Ryan",
+		score: 21992
+	},
+	{
+		name: "Ashley",
+		score: 11882
+	}
 ]
 

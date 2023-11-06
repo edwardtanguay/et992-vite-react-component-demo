@@ -2,7 +2,8 @@ import { Footer } from "./components/layout/Footer";
 import { Header } from "./components/layout/Header";
 import { ImageBox } from "./components/ImageBox";
 import { Dropdown } from "./components/Dropdown";
-import * as exampleData from './exampleData';
+import * as exampleData from "./exampleData";
+import { ScoreCard } from "./components/ScoreCard";
 
 export const App = () => {
 	return (
@@ -24,6 +25,9 @@ export const App = () => {
 			/>
 			<Dropdown choices={exampleData.countries} />
 			<Dropdown choices={exampleData.animals} />
+
+			<ScoreCard />
+
 			<Footer />
 		</>
 	);
