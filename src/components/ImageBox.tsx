@@ -1,4 +1,10 @@
-export const ImageBox = ({title, imageFile, body}) => {
+interface IProps {
+	title: string;
+	imageFile: string;
+	body: string;
+}
+
+export const ImageBox = ({title, imageFile, body } : IProps) => {
 	return (
 		<div className="bg-orange-300 p-4">
 			<h2 className="mb-2 text-2xl">{title}</h2>
