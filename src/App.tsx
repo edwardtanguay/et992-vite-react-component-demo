@@ -16,6 +16,17 @@ const countries = [
 	"France",
 ];
 
+const animals = [
+  "Lion",
+  "Elephant",
+  "Giraffe",
+  "Tiger",
+  "Kangaroo",
+  "Penguin",
+  "Dolphin",
+  "Hippopotamus",
+]
+
 export const App = () => {
 	return (
 		<>
@@ -35,6 +46,7 @@ export const App = () => {
 				stars={16}
 			/>
 			<Dropdown choices={countries} />
+			<Dropdown choices={animals} />
 			<Footer />
 		</>
 	);
