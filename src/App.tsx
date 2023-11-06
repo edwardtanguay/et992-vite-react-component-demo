@@ -2,30 +2,7 @@ import { Footer } from "./components/layout/Footer";
 import { Header } from "./components/layout/Header";
 import { ImageBox } from "./components/ImageBox";
 import { Dropdown } from "./components/Dropdown";
-
-const countries = [
-	"Austria",
-	"Belgium",
-	"Bulgaria",
-	"Croatia",
-	"Cyprus",
-	"Czech Republic",
-	"Denmark",
-	"Estonia",
-	"Finland",
-	"France",
-];
-
-const animals = [
-  "Lion",
-  "Elephant",
-  "Giraffe",
-  "Tiger",
-  "Kangaroo",
-  "Penguin",
-  "Dolphin",
-  "Hippopotamus",
-]
+import * as exampleData from './exampleData';
 
 export const App = () => {
 	return (
@@ -45,8 +22,8 @@ export const App = () => {
 				body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vitae nisi ratione repellendus dolorum ea officia nam, consequuntur, sunt similique dolores quidem iste voluptates adipisci quam suscipit expedita odio commodi!"
 				stars={16}
 			/>
-			<Dropdown choices={countries} />
-			<Dropdown choices={animals} />
+			<Dropdown choices={exampleData.countries} />
+			<Dropdown choices={exampleData.animals} />
 			<Footer />
 		</>
 	);
