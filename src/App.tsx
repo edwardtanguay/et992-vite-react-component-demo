@@ -24,8 +24,10 @@ export const App = () => {
 				body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vitae nisi ratione repellendus dolorum ea officia nam, consequuntur, sunt similique dolores quidem iste voluptates adipisci quam suscipit expedita odio commodi!"
 				stars={16}
 			/>
-			<Dropdown choices={exampleData.countries} />
-			<Dropdown choices={exampleData.animals} />
+			<Wrapper title="Dropdowns">
+				<Dropdown choices={exampleData.countries} />
+				<Dropdown choices={exampleData.animals} />
+			</Wrapper>
 
 			<Wrapper title="Score Cards">
 				{exampleData.playerResults.map((playerResult) => {

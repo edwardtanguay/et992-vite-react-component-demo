@@ -4,7 +4,7 @@ interface IProps {
 
 export const Dropdown = ({ choices }: IProps) => {
 	return (
-		<select className="mt-6 mr-3">
+		<select className="mt-3 mr-3">
 			{choices.map((choice) => {
 				return <option value={choice.toLowerCase().replace(' ', '')}>{choice}</option>;
 			})}
