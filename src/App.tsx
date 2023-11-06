@@ -34,9 +34,14 @@ export const App = () => {
 			</Wrapper>
 
 			<Wrapper title="Score Cards">
-				{exampleData.playerResults.map((playerResult) => {
-					return <ScoreCard playerResult={playerResult} />;
-				})}
+				<div className="flex">
+					<div>
+						{exampleData.playerResults.map((playerResult) => {
+							return <ScoreCard playerResult={playerResult} />;
+						})}
+					</div>
+					<p className="flex w-full justify-center items-center text-5xl">nnn</p>
+				</div>
 			</Wrapper>
 
 			<Footer />

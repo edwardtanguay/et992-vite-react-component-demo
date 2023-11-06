@@ -12,6 +12,7 @@ export const ScoreCard = ({playerResult}: IProps) => {
 			<p className="font-bold">{playerResult.name}{isInvited && '*'}</p>
 			<p>{playerResult.score}</p>
 			<button onClick={() => setIsInvited(!isInvited)}>invited</button>
+			<button className='mt-2'>favorite</button>
 		</div>
 	);
 };
